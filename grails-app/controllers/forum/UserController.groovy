@@ -20,7 +20,6 @@ class UserController {
         respond userService.get(id)
     }
 
-    @Secured('ROLE_ADMIN')
     def create() {
         respond new User(params)
     }
