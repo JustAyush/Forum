@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant');
 @import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Archivo');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 
 .container {
   align-items: center;
-  width: 50%;
+  width: 30%;
   margin-top: 50px;
 }
 
-#forum {
-  font-family: "Playfair black";
-  font-size: 35px;
-  font-weight: bolder;
+.commentBox {
+  marigin: 15px;
+  font-family: "Cormorant semibold";
+  font-size: 20px;
+  color: #656168;
 }
+
 
 .subject {
   font-family: "archivo bold";
@@ -36,20 +37,4 @@
   font-style: italic;
   font-weight: bolder;
   float: right;
-}
-
-.commentBox {
-  marigin: 15px;
-  font-family: "Cormorant semibold";
-  font-size: 20px;
-  color: #656168;
-}
-
-.topic {
-  margin-left: 20px;
-}
-
-
-.topics {
-  padding: 15px;
 }

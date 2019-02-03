@@ -1,3 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant');
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+
 .commentBox {
-  border: solid 1px black;
+  marigin: 15px;
+  font-family: "Cormorant semibold";
+  font-size: 20px;
+  color: #656168;
+}
+
+.container {
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+}
+
+.tarea {
+  height: 140px;
+}
+
+.commentBy {
+  font-family: "Lora Bold";
+  font-size: 18px;
+  color: #3a393a;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#by {
+  font-family: "Cormorant semibold";
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.subject {
+  font-family: "archivo bold";
+  font-size: 30px;
+  color: #544d54;
+}
+
+#hi {
+  font-family: "Cormorant semibold";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.currentUser {
+  font-family: "Lora Bold";
+  font-size: 22px;
+  color: #3a393a;
+  font-style: italic;
+  font-weight: bolder;
+  float: right;
+}
+
+.btn {
+  font-family: "Cormorant bold";
 }
