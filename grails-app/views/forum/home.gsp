@@ -9,6 +9,10 @@
 
     <h1> Welcome to 368 </h1>
 
+    <sec:ifLoggedIn>
+      <h3> <sec:username/> </h3>
+    </sec:ifLoggedIn>
+
     <g:each var="s" in="${sections}">
         <div class="section">
           <li> ${s.title} </li>

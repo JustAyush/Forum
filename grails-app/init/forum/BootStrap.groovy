@@ -5,19 +5,15 @@ class BootStrap {
     def init = { servletContext ->
 
       // initializing username and userrole so that you can login
-      def adminRole = new Role(authority: 'ROLE_ADMIN').save()
+      def adminRole = new Role(authority: 'ROLE_ADMIN').save(flush: true)
+      def userRole = new Role(authority: 'ROLE_USER').save(flush: true)
 
-      def testUser = new User(username: 'me', password: 'password').save()
+      def testUser = new User(username: 'me', password: 'password').save(flush: true)
 
-      UserRole.create testUser, adminRole
-
-      UserRole.withSession {
-        it.flush()
-        it.clear()
-      }
+      UserRole.create testUser, adminRole, true
 
       assert User.count() == 1
-      assert Role.count() == 1
+      assert Role.count() == 2
       assert UserRole.count() == 1
 
 

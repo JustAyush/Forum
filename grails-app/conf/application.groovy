@@ -5,6 +5,7 @@ grails.plugin.springsecurity.userLookup.userDomainClassName = 'forum.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'forum.UserRole'
 grails.plugin.springsecurity.authority.className = 'forum.Role'
 grails.plugin.springsecurity.logout.postOnly = false // enabling user logout through GET request
+grails.plugin.springsecurity.ui.register.defaultRoleNames = ['ROLE_USER']
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
@@ -22,7 +23,8 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/register/**',   		 access: ['permitAll']],
 	[pattern: '/role/**',   		 access: ['ROLE_ADMIN']],
 	[pattern: '/securityInfo/**',       access: ['ROLE_ADMIN']],
-	[pattern: '/registrationCode/**',   access: ['ROLE_ADMIN']]
+	[pattern: '/registrationCode/**',   access: ['ROLE_ADMIN']],
+	[pattern: '/login/**',   		 access: ['permitALL']]
 ]
 
 grails.plugin.springsecurity.filterChain.chainMap = [
